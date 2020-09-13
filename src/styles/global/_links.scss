@@ -1,0 +1,18 @@
+:-webkit-any-link {
+  color: $c-brand-primary;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}
+:-moz-any-link {
+  color: $c-brand-primary;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}
+:any-link {
+  color: $c-brand-primary;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+}

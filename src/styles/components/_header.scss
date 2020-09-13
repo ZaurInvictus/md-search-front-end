@@ -1,0 +1,59 @@
+// =============================================================================
+// Main Header Structure
+// =============================================================================
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 80px;
+  padding: 0px 30px;
+  overflow: hidden;
+  box-shadow: $shadow-primary;
+  background-color: $c-background-light;
+}
+
+
+// =============================================================================
+// Brand
+// =============================================================================
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand__logo {
+  height: 36px;
+}
+
+// =============================================================================
+// Nav
+// =============================================================================
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__link {
+  margin-right: var(--xs);
+  color: $c-text-mute;
+
+  &:hover {
+    color: $c-brand-primary;
+    text-decoration: none;
+  }
+}

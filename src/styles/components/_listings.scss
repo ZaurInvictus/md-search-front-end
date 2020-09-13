@@ -1,0 +1,75 @@
+// =============================================================================
+// Listings
+// =============================================================================
+
+.listings__list {
+  grid-column: 1 / -2;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  flex: 1;
+  margin-left: -30px;
+  padding: 0px 40px 0px;
+  overflow-y: auto;
+  overflow-x: visible;
+}
+
+.listings__item {
+  display: flex;
+  border-radius: 7px;
+  background-color: $c-background-light;
+  box-shadow: $shadow-secondary;
+  transition: box-shadow 0.2s ease-out;
+  cursor: pointer;
+
+  &:hover { box-shadow: $shadow-hover; }
+
+  &:last-child { margin-bottom: 100px; }
+}
+
+.listings__logo__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 60px 30px;
+  border-right: 1px solid $c-border-main;
+}
+
+.listings__logo {
+  max-height: 60px;
+  max-width: 140px;
+}
+
+.listings__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: var(--xs);
+}
+
+.listings__details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+.listings__employer {
+  color: $c-text-mute;
+  margin-right: 10px;
+  padding: 3px 10px 3px 0px;
+  border-right: 1px solid $c-border-main;
+}
+
+.listings__location {
+  padding: 3px 0px;
+  color: $c-text-mute;
+}
+
+.listings__tagline {
+  padding-top: 8px;
+  color: $c-text-mute;
+}

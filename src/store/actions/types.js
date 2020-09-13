@@ -1,0 +1,21 @@
+// ALERT
+export const SET_ALERT = 'SET_ALERT'
+export const REMOVE_ALERT = 'REMOVE_ALERT'
+
+// AUTH
+export const REGISTER_START = 'REGISTER_START'
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS'
+export const REGISTER_FAIL = 'REGISTER_FAIL'
+export const LOGIN_START = 'LOGIN_START'
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+export const LOGIN_FAIL = 'LOGIN_FAIL'
+export const LOGOUT = 'LOGOUT'
+
+
+// USERS
+export const GET_USERS_SUCCESS = "GET_USERS_SUCCESS"
+export const GET_USERS_ERROR = "GET_USERS_ERROR"
+
+export const GET_USER_SUCCESS = "GET_USER_SUCCESS"
+export const GET_USER_ERROR = "GET_USER_ERROR"
+

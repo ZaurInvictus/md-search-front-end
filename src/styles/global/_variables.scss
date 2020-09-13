@@ -1,0 +1,69 @@
+// =============================================================================
+// Color Definitions
+// =============================================================================
+
+$white: #ffffff;
+$snow: #f6f7f9;
+$silver: #dadada;
+$light-gray: #afafaf;
+$gray: #737373;
+$charcoal: #373737;
+$blue: #3971de;
+$violet: #16263e;
+$seafoam: #3bccc2;
+
+
+// =============================================================================
+// Color Usage
+// =============================================================================
+
+$c-background-main: $snow;
+$c-background-light: $white;
+
+$c-text-main: $charcoal;
+$c-text-mute: $gray;
+$c-text-faint: $light-gray;
+$c-text-light: $white;
+
+$c-border-main: $snow;
+$c-border-light: $white;
+$c-border-dark: $silver;
+
+$c-brand-primary: $blue;
+$c-brand-secondary: $violet;
+$c-brand-tertiary: $seafoam;
+
+
+// =============================================================================
+// Common Margins & Padding
+// =============================================================================
+
+:root {
+  --xs: 30px;
+  --sm: 50px;
+  --md: 75px;
+  --lg: 100px;
+
+  @include for-tablet-down {
+    --xs: 30px;
+    --sm: 50px;
+    --md: 75px;
+    --lg: 100px;
+  }
+
+  @include for-mobile-down {
+    --xs: 30px;
+    --sm: 50px;
+    --md: 75px;
+    --lg: 100px;
+  }
+}
+
+
+// =============================================================================
+// Shadows
+// =============================================================================
+
+$shadow-primary: 0 64px 64px 0 rgba(0,0,0,0.06), 0 32px 32px 0 rgba(0,0,0,0.03), 0 16px 16px 0 rgba(0,0,0,0.02), 0 4px 4px 0 rgba(0,0,0,0.02), 0 2px 2px 0 rgba(0,0,0,0.02);
+$shadow-secondary: 0 64px 64px 0 rgba(0,0,0,0.02), 0 32px 32px 0 rgba(0,0,0,0.015), 0 16px 16px 0 rgba(0,0,0,0.01), 0 4px 4px 0 rgba(0,0,0,0.01), 0 2px 2px 0 rgba(0,0,0,0.01);
+$shadow-hover: 0 64px 64px 0 rgba(0,0,0,0.06), 0 32px 32px 0 rgba(0,0,0,0.03), 0 16px 16px 0 rgba(0,0,0,0.02), 0 4px 4px 0 rgba(0,0,0,0.02), 0 2px 2px 0 rgba(0,0,0,0.02);

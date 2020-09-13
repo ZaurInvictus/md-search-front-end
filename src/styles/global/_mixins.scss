@@ -1,0 +1,21 @@
+// =============================================================================
+// Responsive Breakpoints
+// =============================================================================
+
+@mixin for-desktop-up {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-down {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin for-mobile-down {
+  @media (max-width: 719px) {
+    @content;
+  }
+}

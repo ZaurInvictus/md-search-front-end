@@ -1,0 +1,103 @@
+// =============================================================================
+// Root & Document
+// =============================================================================
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $c-text-faint;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $c-text-faint;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $c-text-faint;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  background-color: $c-background-main;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: $c-text-main;
+}
+
+
+// =============================================================================
+// Page Layout
+// =============================================================================
+
+:root {
+  --aside-width: 330px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: var(--aside-width);
+  padding: 30px 0px 30px 30px;
+}
+
+.main {
+  position: absolute;
+  top: 80px;
+  left: auto;
+  right: 0;
+  bottom: auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - var(--aside-width));
+  height: calc(100vh - 80px);
+  padding: 30px 0px 0px 30px;
+  overflow-y: hidden;
+}
+
+.section {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(30px, 1fr) repeat(12, minmax(0px, 100px)) minmax(30px, 1fr);
+}
+
+.container.tp--xs { padding-top: var(--xs); }
+.container.tp--sm { padding-top: var(--sm); }
+.container.tp--md { padding-top: var(--md); }
+.container.tp--lg { padding-top: var(--lg); }
+
+.container.bp--xs { padding-bottom: var(--xs); }
+.container.bp--sm { padding-bottom: var(--sm); }
+.container.bp--md { padding-bottom: var(--md); }
+.container.bp--lg { padding-bottom: var(--lg); }
+
+
+// =============================================================================
+// Elements & Pieces
+// =============================================================================
+
+.segment__heading {
+  margin: 0px 20px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $c-brand-secondary;
+}

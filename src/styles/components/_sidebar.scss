@@ -1,0 +1,112 @@
+// =============================================================================
+// Sidebar Form
+// =============================================================================
+
+.sidebar__form {
+  z-index: 10;
+  display: block;
+  overflow: visible;
+
+  input[type="text"] {
+    width: 100%;
+    margin: 0px 0px 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid $c-border-dark;
+    border-radius: 7px;
+    background-color: $c-background-main;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      background-color: $c-background-light;
+      border-bottom: 1px solid $c-border-light;
+    }
+
+    &:focus {
+      background-color: $c-background-light;
+      border-bottom: 1px solid $c-border-light;
+      box-shadow: $shadow-secondary;
+    }
+
+    &:not(:placeholder-shown) {
+      background-color: $c-background-light;
+      border-bottom: 1px solid $c-border-light;
+      box-shadow: $shadow-secondary;
+    }
+  }
+
+  select {
+    width: 100%;
+    margin: 0px 0px 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid $c-border-dark;
+    border-radius: 7px;
+    background-color: $c-background-main;
+    background: url(/images/caret.png) no-repeat 92% 50% transparent;
+    color: $c-text-faint;
+    transition: all 0.2s ease-out;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:hover {
+      background-color: $c-background-light;
+      border-bottom: 1px solid $c-border-light;
+    }
+
+    &:focus {
+      background-color: $c-background-light;
+      border-bottom: 1px solid $c-border-light;
+      box-shadow: $shadow-secondary;
+    }
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+select:not(.default),
+option:not([value="default"]) {
+  background-color: $c-background-light;
+  border-bottom: 1px solid $c-border-light;
+  box-shadow: $shadow-secondary;
+  color: $c-text-main;
+}
+
+
+// =============================================================================
+// Sidebar Footer
+// =============================================================================
+
+.sidebar__footer {
+  position: absolute;
+  top: auto;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.footer__link {
+  color: $c-text-mute;
+
+  &:hover {
+    color: $c-brand-primary;
+    text-decoration: none;
+  }
+}
+
+.copyright { color: $c-text-faint; }

@@ -1,0 +1,13 @@
+.button {
+  padding: 15px 20px;
+  color: $c-text-light;
+  background-color: $c-brand-primary;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-out;
+
+  &:hover {
+    text-decoration: none;
+    box-shadow: $shadow-primary;
+  }
+}
